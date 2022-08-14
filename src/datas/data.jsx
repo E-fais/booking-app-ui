@@ -1,0 +1,23 @@
+const hotels=[
+    {  id:1,name:'Holiday Inn',place:'Moonnar,Kerala',rating:4.0,rate:4000,image:'https://hideawaybeachmaldives.com/wp-content/uploads/2016/07/hideaway-maldives-main-pool-1600x900-495x400.jpg'},
+    {  id:2,name:'Vistara Resorts',place:'Vythiri,Wayanad',rating:3.0,rate:3000,image:'https://th.bing.com/th/id/R.e8f38b66562ad36a6ce9634ce773785b?rik=ro%2bBkTrNF16ENg&riu=http%3a%2f%2fwww.seyexclusive.com%2fimages%2fuploads%2f-SEYCHELLES%2fMAIA-LUXURY-RESORT%2f_main%2f14-Maia-Hi_Res.jpg&ehk=WPgI9xIdcGZMigBsH7%2fnQltQu3d4O2ZwA60Jp4bqW3c%3d&risl=&pid=ImgRaw&r=0'},
+    {  id:3,name:'Hill Palace',place:'Kalpatta,Wayanad',rate:2500,rating:3.5,image:'https://th.bing.com/th/id/R.c434644847a3a4157b8ba0eb1d41a808?rik=WOPxqmSeaWxsOA&pid=ImgRaw&r=0'},
+    {  id:4,name:'Hotel Sheraton',place:'Kochi,Kerala',rate:4500,rating:2.5,image:'https://th.bing.com/th/id/OIP.UsxFP3BbvEc-5jWsB8d9pQHaFA?pid=ImgDet&rs=1'},
+    {  id:5,name:'Royal Suites ',place:'Kozhikkode,Kerala',rate:2500,rating:3.9,image:'https://th.bing.com/th/id/OIP.G9bkqck7GGaxTkBmnJsRnAHaE7?pid=ImgDet&rs=1'},
+    {  id:6,name:'Beach Way Hotel ',place:'Varkkala,Kerala',rate:7000,rating:3.3,image:'https://imghtlak.mmtcdn.com/images/hotels/201407091134196794/1476418746822.jpg'},
+    {  id:7,name:'Luxury Holidays ',place:'Kochi,Kerala',rate:4000,rating:4.2,image:'https://cache.marriott.com/content/dam/marriott-renditions/COKMC/cokmc-deluxe-0055-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*'},
+    {  id:8,name:'Zamorine Legacy ',place:'Kozhikkode,Kerala',rate:2500,rating:3.2,image:'https://th.bing.com/th/id/OIP.B2ENZn0zCGXk8wF-_IlmQQHaFj?pid=ImgDet&rs=1'},
+    {  id:9,name:'Leasure Kerala  ',place:'Alappuzha,Kerala',rate:7000,rating:3.8,image:'https://th.bing.com/th/id/R.a8c591715cb0625fcb7ae42783a43189?rik=Dg81GyGQTlB6pA&pid=ImgRaw&r=0'},
+    {  id:10,name:'Padmanabha Residency',place:'Thiruvanandapuram,Kerala',rating:2.9,rate:2000,image:'https://th.bing.com/th/id/OIP.O5l060mA3hX33oMztrPlVQHaE6?pid=ImgDet&w=640&h=425&rs=1'},
+    {  id:11,name:'Kadathanad Plaza',place:'Kottakkal,Kerala',rate:2500,rating:3.0,image:'https://th.bing.com/th/id/OIP.GSK0cizLTn7bN6OmxDrgAAHaDg?pid=ImgDet&rs=1'},
+    {  id:12,name:'Sree Muruga Lodge',place:'Ooty,Tamil Nadu',rate:4000,rating:4.9,image:'https://foto.hrsstatic.com/fotos/0/3/1090/700/80/000000/http%3A%2F%2Ffoto-origin.hrsstatic.com%2Ffoto%2F6%2F8%2F9%2F6%2F689687%2F689687_a_27815082.jpg/R0g1H28%2FzXqoMoj4Pqbqfg%3D%3D/1366,2048/6/Kochi_Marriott_Hotel-Cochin-Aussenansicht-1-689687.jpg'},
+    {  id:13,name:'Kailasa Residency',place:'Guruvayoor,Kerala',rate:1500,rating:3.0,image:'https://cache.marriott.com/content/dam/marriott-renditions/COKAP/cokap-guestroom-0010-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*'},
+    {  id:14,name:'Sree Ganesh Rooms',place:'Mookambika,Karantaka',rate:1000,rating:1.9,image:'https://th.bing.com/th/id/R.91dc08015ee3b04e62634702449dc17b?rik=Wdmkr2mSExFZ5w&pid=ImgRaw&r=0'},
+    {  id:15,name:'Luxury Holidays',place:'Hyderabad,Telengana',rate:7000,rating:2.7,image:'https://th.bing.com/th/id/R.e1320e3099c2040936cd7f81f82f76eb?rik=cayokDWTerMRPw&pid=ImgRaw&r=0'},
+    {  id:16,name:'Hotel Grand',place:'Bangalore,Karnataka',rate:13000,rating:3.1,image:'https://th.bing.com/th/id/OIP.x8ypMFKTzc16ptlTugZSSQHaE7?pid=ImgDet&w=1200&h=799&rs=1'},
+    {  id:17,name:'Beach View',place:'Kovalam, Kerala',rate:8000,rating:3.6,image:'https://media-cdn.tripadvisor.com/media/photo-s/07/a7/02/80/arugambay-surf-resort.jpg'},
+    {  id:18,name:'Nature Breeze',place:'Vagamon, Kerala',rate:9000,rating:4.2,image:'https://th.bing.com/th/id/OIP.Th3IFAE9-APuRWKiBWYIxAHaFk?pid=ImgDet&rs=1'},
+    {  id:19,name:'Royal Marina',place:'Chennai, Tamil Nadu',rating:3.0,rate:3500,image:'https://th.bing.com/th/id/OIP.1dtO5HKc8Ow8Ql411aIvEgHaFA?pid=ImgDet&rs=1'},
+    {  id:20,name:'Hill View',place:'Nelliyampathi, Kerala',rating:2.0,rate:2500,image:'https://th.bing.com/th/id/OIP.IWBC5q7jLMKGdsDk0weKZgAAAA?pid=ImgDet&w=375&h=500&rs=1'},
+      ]
+      export default hotels

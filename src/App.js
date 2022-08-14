@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Fragment, useState}  from 'react'
+import {Routes,Route} from 'react-router-dom'
+import Home from './Home'
+import HotelDetails from './Components/HotelDetails/HotelDetails'
+import { HotelContext } from './context/HotelContext'
+import UserInfo from './Components/user/UserInfo'
+import Footer from './Components/Footer'
+
+
+
 
 function App() {
+  const [hotels, setHotels] = useState([]);
+  const [date, setDate] = useState([null, null]);
+  const[amount,setAmount]=useState()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <HotelContext.Provider value={{hotels,setHotels,date,setDate}}>
+    <Fragment>
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='hotelDetails/:id' element={<HotelDetails/>}/>
+    <Route path='/userInfo' element={<UserInfo />}/>
+   </Routes>
+   <Footer/>
+   </Fragment>
+    </HotelContext.Provider>
+  )
 }
 
-export default App;
+export default App
